@@ -1,6 +1,14 @@
 # B2B Email & Domain Scorer — remote MCP server
 
-Score lead emails and company domains **before they reach your CRM or outreach sequence**. It classifies each one as business / free / role / disposable / risky / invalid, suggests fixes for typo domains, and checks MX, the mail provider and SPF/DMARC.
+**Get a decision for each lead, not a pile of flags.** Every email comes back with `action`: `keep`, `fix` (with the corrected address in `send_to`), `review`, or `drop`, plus a one-line `action_reason`.
+
+## What makes it different
+
+- **Decisions, not raw flags**: most email validators return 15 booleans and leave your agent to guess. This returns what to do.
+- **Typos fixed, not just flagged**: `jane@gmial.com` comes back as `fix` -> `jane@gmail.com`.
+- **A ready-to-send list**: `score_batch` returns `send_list`, the deduplicated list of kept plus corrected addresses, and keep/fix/review/drop counts.
+- **B2B-aware**: role inboxes (info@, sales@) and free mailboxes go to `review` with the reason, because they reach a company but rarely a decision-maker.
+- **No mail is sent** (no SMTP probing that can get your IP blocklisted), and it's **MCP-native with a free, keyless demo endpoint**.
 
 This is a **hosted (remote) MCP server** using Streamable HTTP. There is nothing to install or run locally, and this repository holds documentation and the MCP Registry manifest only. The server code is not open source.
 
@@ -13,9 +21,9 @@ Official MCP Registry name: `dev.workers.mohamed-bahaa53000.email-scorer/b2b-ema
 
 ## Tools
 
-- `score_email`: verdict (business / free / role / disposable / risky / invalid / unknown), a 0-100 score, reasons, risk, is_disposable / is_free / is_role / accepts_mail flags, MX and mail provider, and a typo suggestion (`gmial.com` -> `gmail.com`). `deep=true` adds SPF/DMARC. No mail is sent.
+- `score_email`: `action` (keep / fix / review / drop), `send_to`, `action_reason`, plus verdict (business / free / role / disposable / risky / invalid / unknown), a 0-100 score, reasons, risk, is_disposable / is_free / is_role / accepts_mail flags, MX and mail provider, and a typo suggestion (`gmial.com` -> `gmail.com`). `deep=true` adds SPF/DMARC. No mail is sent.
 - `score_domain`: MX records, mail provider (Google Workspace, Microsoft 365, ...), free/disposable flags, SPF/DMARC for a company domain, URL or email.
-- `score_batch`: score a list in one call (**paid endpoint only**).
+- `score_batch`: clean a list in one call and get `send_list` plus action counts (**paid endpoint only**).
 
 ## Use cases
 
