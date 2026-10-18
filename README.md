@@ -10,6 +10,12 @@
 - **B2B-aware**: role inboxes (info@, sales@) and free mailboxes go to `review` with the reason, because they reach a company but rarely a decision-maker.
 - **No mail is sent** (no SMTP probing that can get your IP blocklisted), and it's **MCP-native with a free, keyless demo endpoint**.
 
+## Try it free
+
+- **No key, right now:** point any MCP client at `https://email-scorer.mohamed-bahaa53000.workers.dev/demo/mcp` (10 tool calls per IP per day).
+- **Free RapidAPI plan:** 100 requests/month on the [Basic plan](https://rapidapi.com/MohamedBahaa/api/b2b-email-domain-scorer/pricing), no card needed. Pro is $3.99 for 30,000.
+- **Using n8n?** Get [lead scoring and routing installed in your n8n for $149](https://mohabaha0.gumroad.com/l/n8n-setup), done for you.
+
 This is a **hosted (remote) MCP server** using Streamable HTTP. There is nothing to install or run locally, and this repository holds documentation and the MCP Registry manifest only. The server code is not open source.
 
 | Endpoint | Auth | Limits |
