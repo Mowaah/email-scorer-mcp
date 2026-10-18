@@ -3,8 +3,12 @@
   "name": "dev.workers.mohamed-bahaa53000.email-scorer/b2b-email-domain-scorer",
   "title": "B2B Email & Domain Scorer",
   "description": "Lead email decisions: keep / fix typo / review / drop, plus a ready-to-send list. Paid: RapidAPI",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "websiteUrl": "https://rapidapi.com/MohamedBahaa/api/b2b-email-domain-scorer",
+  "repository": {
+    "url": "https://github.com/Mowaah/email-scorer-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
