@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.workers.mohamed-bahaa53000.email-scorer/b2b-email-domain-scorer",
+  "title": "B2B Email & Domain Scorer",
+  "description": "Score B2B lead emails: business/free/role/disposable, typo fixes, MX, SPF/DMARC. Paid: RapidAPI",
+  "version": "1.1.2",
+  "websiteUrl": "https://rapidapi.com/MohamedBahaa/api/b2b-email-domain-scorer",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://email-scorer.mohamed-bahaa53000.workers.dev/demo/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://b2b-email-domain-scorer.p.rapidapi.com/mcp",
+      "headers": [
+        {
+          "name": "X-RapidAPI-Key",
+          "description": "Your RapidAPI key (free Basic plan)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-RapidAPI-Host",
+          "description": "RapidAPI host",
+          "isRequired": true,
+          "value": "b2b-email-domain-scorer.p.rapidapi.com"
+        }
+      ]
+    }
+  ]
+}
