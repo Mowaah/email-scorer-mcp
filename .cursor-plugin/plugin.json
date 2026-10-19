@@ -1,0 +1,19 @@
+{
+  "name": "email-scorer",
+  "displayName": "B2B Email Scorer",
+  "version": "1.0.0",
+  "description": "Lead email decisions: keep, fix typo, review or drop, with a ready-to-send list.",
+  "author": {
+    "name": "Mohamed Zaghloul",
+    "email": "mohamed.bahaa5300@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "validation",
+    "leads",
+    "mcp"
+  ],
+  "logo": "logo.png",
+  "mcpServers": ".mcp.json"
+}
