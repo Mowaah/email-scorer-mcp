@@ -1,0 +1,8 @@
+{
+  "name": "email-scorer",
+  "version": "1.0.0",
+  "description": "B2B email scoring with an action on every address: keep, fix (with the corrected send_to), review or drop.",
+  "mcpServers": {
+    "email-scorer": { "httpUrl": "https://email-scorer.mohamed-bahaa53000.workers.dev/demo/mcp" }
+  }
+}
