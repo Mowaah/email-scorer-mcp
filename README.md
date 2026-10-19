@@ -10,10 +10,15 @@
 - **B2B-aware**: role inboxes (info@, sales@) and free mailboxes go to `review` with the reason, because they reach a company but rarely a decision-maker.
 - **No mail is sent** (no SMTP probing that can get your IP blocklisted), and it's **MCP-native with a free, keyless demo endpoint**.
 
+## No-code version
+
+Not building an agent? The same scoring comes in ready-made tools:
+
+- **[Free email list cleaner](https://email-scorer.mohamed-bahaa53000.workers.dev/tools/email-list-cleaner)** checks and cleans up to 25 emails in your browser, with no sign-up.
+- **n8n templates:** [Lead Scoring & Routing (free)](https://mohabaha0.gumroad.com/l/lead-routing-free) scores form leads with Gemini, logs them to Sheets and alerts Slack. [Lead Scoring & Routing Pro ($59)](https://mohabaha0.gumroad.com/l/lead-routing-pro) adds HubSpot and Gmail routing.
+
 ## Try it free
 
-- **In your browser, no code:** the [Free Bulk Email List Cleaner](https://email-scorer.mohamed-bahaa53000.workers.dev/tools/email-list-cleaner) cleans up to 25 emails at a time with keep / fix / review / drop.
-- **Also free:** the [Free IBAN & VAT Checker](https://invoice-validator.mohamed-bahaa53000.workers.dev/tools/iban-vat-checker) (check an IBAN or VAT number before paying an invoice).
 - **No key, right now:** point any MCP client at `https://email-scorer.mohamed-bahaa53000.workers.dev/demo/mcp` (10 tool calls per IP per day).
 - **Free RapidAPI plan:** 100 requests/month on the [Basic plan](https://rapidapi.com/MohamedBahaa/api/b2b-email-domain-scorer/pricing), no card needed. Pro is $3.99 for 30,000.
 - **Using n8n?** Get [lead scoring and routing installed in your n8n for $149](https://mohabaha0.gumroad.com/l/n8n-setup), done for you.
