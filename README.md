@@ -41,13 +41,12 @@
 Not building an agent? The same scoring comes in ready-made tools:
 
 - **[Free email list cleaner](https://email-scorer.mohamed-bahaa53000.workers.dev/tools/email-list-cleaner)** checks and cleans up to 25 emails in your browser, with no sign-up.
-- **n8n templates:** [Lead Scoring & Routing (free)](https://mohabaha0.gumroad.com/l/lead-routing-free) scores form leads with Gemini, logs them to Sheets and alerts Slack. [Lead Scoring & Routing Pro ($59)](https://mohabaha0.gumroad.com/l/lead-routing-pro) adds HubSpot and Gmail routing.
+- **[Free n8n template: Lead Scoring & Routing](https://mohabaha0.gumroad.com/l/lead-routing-free)** scores form leads with Gemini, logs them to Sheets and alerts Slack.
 
 ## Try it free
 
 - **No key, right now:** point any MCP client at `https://email-scorer.mohamed-bahaa53000.workers.dev/demo/mcp` (10 tool calls per IP per day).
 - **Free RapidAPI plan:** 100 requests/month on the [Basic plan](https://rapidapi.com/MohamedBahaa/api/b2b-email-domain-scorer/pricing), no card needed. Pro is $3.99 for 30,000.
-- **Using n8n?** Get [lead scoring and routing installed in your n8n for $149](https://mohabaha0.gumroad.com/l/n8n-setup), done for you.
 
 This is a **hosted (remote) MCP server** using Streamable HTTP. There is nothing to install or run locally, and this repository holds documentation and the MCP Registry manifest only. The server code is not open source.
 
