@@ -1,6 +1,32 @@
 # B2B Email & Domain Scorer — remote MCP server
 
-**Get a decision for each lead, not a pile of flags.** Every email comes back with `action`: `keep`, `fix` (with the corrected address in `send_to`), `review`, or `drop`, plus a one-line `action_reason`.
+**For sales and lead-gen teams: get a keep, fix, review or drop decision for every lead email before you send outreach.**
+
+**1. Connect** (free, no key; works in Claude Desktop, Cursor, Cline, VS Code and any client that supports remote Streamable HTTP):
+
+```json
+{
+  "mcpServers": {
+    "email-scorer": {
+      "url": "https://email-scorer.mohamed-bahaa53000.workers.dev/demo/mcp"
+    }
+  }
+}
+```
+
+**2. Ask:** *"Is jane@gmial.com OK to email?"* Your agent calls:
+
+```json
+{"name":"score_email","arguments":{"email":"jane@gmial.com"}}
+```
+
+**3. Get** (real output from the free demo endpoint, trimmed):
+
+```json
+{"action":"fix","send_to":"jane@gmail.com",
+ "action_reason":"Likely typo: send to jane@gmail.com instead",
+ "verdict":"risky","score":10,"reasons":["likely_typo","typo_domain_is_disposable_or_parked"]}
+```
 
 ## What makes it different
 
